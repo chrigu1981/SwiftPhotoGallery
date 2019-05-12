@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.license          = 'Apache-2.0'
   s.author           = { "Justin Vallely" => "jvallely@inspirato.com" }
   s.source           = { :git => "https://github.com/chrigu1981/SwiftPhotoGallery.git", :tag => "#{s.version}" }
+  s.swift_version    = "5"
 
   s.ios.deployment_target = "9.0"
   s.tvos.deployment_target = "10.0"
