@@ -218,8 +218,9 @@ public class SwiftPhotoGallery: UIViewController {
     
     // MARK: - Internal Methods
     
-    func updatePageControl() {
+    public func updatePageControl() {
         self.delegate?.galleryDidDrag(currentPage: currentPage)
+        pageControl.numberOfPages = numberOfImages
         pageControl.currentPage = currentPage
     }
     
@@ -292,8 +293,7 @@ public class SwiftPhotoGallery: UIViewController {
     }
     #endif
     
-    @objc public func singleTapAction(recognizer: UITapGestureRecognizer) {
-        //self.delegate?.galleryDidTapToClose(gallery: self)delegate?.galleryDidTapToClose(gallery: self)
+    @objc public func singleTapAction(recognizer: UITapGestureRecognizer) {//self.delegate?.galleryDidTapToClose(gallery: self)delegate?.galleryDidTapToClose(gallery: self)
     }
     
     
